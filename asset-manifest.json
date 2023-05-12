@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/alexcjwei.github.io/static/css/main.073c9b0a.css",
+    "main.js": "/alexcjwei.github.io/static/js/main.1b66cb6d.js",
+    "static/js/787.02bef91d.chunk.js": "/alexcjwei.github.io/static/js/787.02bef91d.chunk.js",
+    "static/media/logo.svg": "/alexcjwei.github.io/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/alexcjwei.github.io/index.html",
+    "main.073c9b0a.css.map": "/alexcjwei.github.io/static/css/main.073c9b0a.css.map",
+    "main.1b66cb6d.js.map": "/alexcjwei.github.io/static/js/main.1b66cb6d.js.map",
+    "787.02bef91d.chunk.js.map": "/alexcjwei.github.io/static/js/787.02bef91d.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.073c9b0a.css",
+    "static/js/main.1b66cb6d.js"
+  ]
+}
