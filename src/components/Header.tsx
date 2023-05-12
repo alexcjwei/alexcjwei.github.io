@@ -1,7 +1,6 @@
 import {
   Heading,
   Box,
-  Link,
   Spacer,
   HStack,
   ButtonGroup,
@@ -16,18 +15,13 @@ function Header() {
         <Heading as='h1'>Alex Wei</Heading>
         <Spacer />
         <ButtonGroup as='nav' variant='link' spacing='5'>
-          <Button as='a' href='#about'>
-            About
-          </Button>
-          <Button as='a' href='#experiences'>
-            Experience
-          </Button>
-          <Button as='a' href='#projects'>
-            Projects
-          </Button>
-          <Button as='a' href='#social-media'>
-            Contact
-          </Button>
+          {['About', 'Experiences', 'Projects', 'Contact'].map((name) => {
+            return (
+              <Button as='a' href={name.toLowerCase()}>
+                {name}
+              </Button>
+            );
+          })}
         </ButtonGroup>
         <Spacer />
         <Socials />
