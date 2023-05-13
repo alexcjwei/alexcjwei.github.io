@@ -12,12 +12,12 @@ function Header() {
   return (
     <Box as='nav' bg='bg-surface'>
       <HStack spacing='10' justify='space-between'>
-        <Heading as='h1'>Alex Wei</Heading>
+        <Heading as='h1'>Alex C. Wei</Heading>
         <Spacer />
         <ButtonGroup as='nav' variant='link' spacing='5'>
           {['About', 'Experiences', 'Projects', 'Contact'].map((name) => {
             return (
-              <Button as='a' href={name.toLowerCase()}>
+              <Button as='a' href={'#' + name.toLowerCase()}>
                 {name}
               </Button>
             );

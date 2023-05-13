@@ -1,5 +1,5 @@
 import { ButtonGroup } from '@chakra-ui/react';
-import LinkButton from './LinkButton';
+import LinkButton from '../components/LinkButton';
 import { socials } from '../data/data';
 
 function Socials() {
