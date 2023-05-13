@@ -95,12 +95,12 @@ export const experiences = [
 
 export const projects = [
   {
-    title: 'Temp',
-    subtitle: 'MERN Stack',
+    title: 'Solar Savings Visualizer',
+    subtitle: 'React + Typescript',
     description:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?',
+      'Created UI with dynamic graphs to visualize potential cost savings and ROI of solar panel installation using React, Typescript, recharts, and external APIs.',
     image: './project-1.gif',
-    link: 'https://alexcjwei.github.io',
+    link: 'https://renewable-energy-visualizer.vercel.app/',
   },
 ];
 

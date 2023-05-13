@@ -1,5 +1,5 @@
 import React from 'react';
-import { ChakraProvider } from '@chakra-ui/react';
+import { ChakraProvider, Container } from '@chakra-ui/react';
 import About from './content/About';
 import Projects from './content/Projects';
 import Header from './content/Header';
@@ -8,12 +8,12 @@ import Experiences from './content/Experiences';
 function App() {
   return (
     <ChakraProvider>
-      <div>
+      <Container>
         <Header />
         <About />
         <Experiences />
         <Projects />
-      </div>
+      </Container>
     </ChakraProvider>
   );
 }

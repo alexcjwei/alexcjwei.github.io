@@ -1,14 +1,22 @@
 import React from 'react';
-import { Heading } from '@chakra-ui/react';
+import { Box, Heading } from '@chakra-ui/react';
+import { projects } from '../data/data';
 
 function Projects() {
   return (
-    <section id='projects'>
+    <Box as='section' id='projects'>
       <Heading as='h2'>Projects</Heading>
       <div className='project-gallery'>
-        {/* Insert your project gallery here */}
+        {projects.map((project) => {
+          return (
+            <Box>
+              {project.subtitle}, {project.title}, {project.link},{' '}
+              {project.description}
+            </Box>
+          );
+        })}
       </div>
-    </section>
+    </Box>
   );
 }
 
