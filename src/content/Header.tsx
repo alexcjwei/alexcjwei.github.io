@@ -15,7 +15,7 @@ function Header() {
         <Heading as='h1'>Alex C. Wei</Heading>
         <Spacer />
         <ButtonGroup as='nav' variant='link' spacing='5'>
-          {['About', 'Experiences', 'Projects', 'Contact'].map((name) => {
+          {['About', 'Projects', 'Experiences', 'Contact'].map((name) => {
             return (
               <Button as='a' href={'#' + name.toLowerCase()}>
                 {name}

@@ -5,7 +5,9 @@ import { projects } from '../data/data';
 function Projects() {
   return (
     <Box as='section' id='projects'>
-      <Heading as='h2'>Projects</Heading>
+      <Heading as='h2' size='lg'>
+        Projects
+      </Heading>
       <div className='project-gallery'>
         {projects.map((project) => {
           return (

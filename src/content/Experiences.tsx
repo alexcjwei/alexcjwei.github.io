@@ -1,14 +1,11 @@
 import {
   Box,
   Heading,
-  Image,
-  VStack,
   Text,
   Link,
   ListItem,
   UnorderedList,
   Card,
-  CardHeader,
   CardBody,
   Flex,
   SimpleGrid,
@@ -19,7 +16,9 @@ import { experiences } from '../data/data';
 function Experiences() {
   return (
     <Box as='section' id='experiences'>
-      <Heading as='h2'>Experiences</Heading>
+      <Heading as='h2' size='lg'>
+        Experiences
+      </Heading>
       <SimpleGrid spacing={4}>
         {experiences.map((exp) => {
           return (
@@ -28,13 +27,15 @@ function Experiences() {
                 <Flex>
                   {/* <Image src={exp.image} alt={exp.company} /> */}
                   <Link href={exp.website} isExternal fontWeight='bold'>
-                    <Heading>{exp.company}</Heading>
+                    <Heading as='h3' size='md'>
+                      {exp.company}
+                    </Heading>
                   </Link>
                 </Flex>
                 {exp.roles.map((role) => {
                   return (
                     <Box>
-                      <Text>
+                      <Text fontWeight='bold'>
                         {role.role} ({role.date})
                       </Text>
                       <UnorderedList>
