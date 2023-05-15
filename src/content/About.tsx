@@ -1,16 +1,14 @@
-import { Heading, Text } from '@chakra-ui/react';
+import { Text } from '@chakra-ui/react';
 import { about } from '../data/data';
+import Section from '../components/Section';
 
 function About() {
   return (
-    <section id='about'>
-      <Heading as='h2' size='lg'>
-        About
-      </Heading>
+    <Section id='about' heading='About'>
       {about.map((about) => (
         <Text>{about}</Text>
       ))}
-    </section>
+    </Section>
   );
 }
 

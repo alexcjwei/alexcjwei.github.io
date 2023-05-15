@@ -1,63 +1,28 @@
 import { extendTheme } from '@chakra-ui/react';
 
-// example theme
 const theme = extendTheme({
   colors: {
     brand: {
-      50: '#F5FDFB',
-      100: '#EAFBF7',
-      200: '#C8F4E9',
-      300: '#A7EEDC',
-      400: '#64D6C4',
-      500: '#21BEAD',
-      600: '#1DAA98',
-      700: '#146F64',
-      800: '#0E524B',
-      900: '#093531',
+      primary: '#004d40',
+      secondary: '#b2dfdb',
+      background: '#f5f5f5',
     },
   },
   fonts: {
     body: 'Roboto, sans-serif',
     heading: 'Montserrat, sans-serif',
   },
-  styles: {
-    global: {
-      body: {
-        bg: 'brand.50',
-        color: 'brand.700',
-      },
-      a: {
-        color: 'brand.500',
-        _hover: {
-          textDecoration: 'underline',
-        },
-      },
-    },
-  },
-  components: {
-    Button: {
-      baseStyle: {
-        borderRadius: 'md',
-        fontWeight: 'bold',
-      },
-      variants: {
-        solid: {
-          bg: 'brand.500',
-          color: 'white',
-          _hover: {
-            bg: 'brand.600',
-          },
-        },
-        outline: {
-          borderColor: 'brand.500',
-          color: 'brand.500',
-          _hover: {
-            bg: 'brand.50',
-            color: 'brand.700',
-          },
-        },
-      },
-    },
+  fontSizes: {
+    xs: '0.75rem',
+    sm: '0.875rem',
+    md: '1rem',
+    lg: '1.125rem',
+    xl: '1.25rem',
+    '2xl': '1.5rem',
+    '3xl': '1.875rem',
+    '4xl': '2.25rem',
+    '5xl': '3rem',
+    '6xl': '4rem',
   },
 });
 

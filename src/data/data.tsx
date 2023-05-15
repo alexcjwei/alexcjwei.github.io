@@ -102,11 +102,19 @@ export const experiences = [
 export const projects = [
   {
     title: 'Solar Savings Visualizer',
-    subtitle: 'React + Typescript',
+    subtitle: 'React, Typescript',
     description:
       'Created UI with dynamic graphs to visualize potential cost savings and ROI of solar panel installation using React, Typescript, recharts, and external APIs.',
     image: './project-1.gif',
     link: 'https://renewable-energy-visualizer.vercel.app/',
+  },
+  {
+    title: 'Hourly',
+    subtitle: 'PostgreSQL, Express, React, Node',
+    description:
+      "Developed web app's user routes and React components enhance office hours in a team of 6. Now a part of the Computer-Oriented Learning Lab at JHU",
+    image: './project-1.gif',
+    link: 'https://collab.cs.jhu.edu/projects/hourly/',
   },
 ];
 

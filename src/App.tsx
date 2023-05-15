@@ -2,19 +2,17 @@ import React from 'react';
 import { ChakraProvider, Container } from '@chakra-ui/react';
 import About from './content/About';
 import Projects from './content/Projects';
-import Header from './content/Header';
+import NavBar from './content/Navbar';
 import Experiences from './content/Experiences';
 import theme from './theme';
 
 function App() {
   return (
     <ChakraProvider theme={theme}>
-      <Header />
-      <Container>
-        <About />
-        <Projects />
-        <Experiences />
-      </Container>
+      <NavBar />
+      <About />
+      <Projects />
+      <Experiences />
     </ChakraProvider>
   );
 }
