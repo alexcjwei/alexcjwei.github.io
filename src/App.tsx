@@ -4,15 +4,16 @@ import About from './content/About';
 import Projects from './content/Projects';
 import Header from './content/Header';
 import Experiences from './content/Experiences';
+import theme from './theme';
 
 function App() {
   return (
-    <ChakraProvider>
+    <ChakraProvider theme={theme}>
+      <Header />
       <Container>
-        <Header />
         <About />
-        <Experiences />
         <Projects />
+        <Experiences />
       </Container>
     </ChakraProvider>
   );
