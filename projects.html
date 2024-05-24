@@ -1,0 +1,76 @@
+<!-- about.html -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alex Wei's projects</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link <link rel="stylesheet" type="text/css" href="styles.css" />
+  </head>
+  <body>
+    <div id="wrapper">
+      <main>
+        <div id="content">
+          <nav>
+            <ul style="display: flex; list-style-type: none; padding: 0">
+              <li style="margin-right: 20px"><a href="index.html">About</a></li>
+              <li><a href="projects.html">Projects</a></li>
+            </ul>
+          </nav>
+          <div class="innertube">
+            <h1>PROJECTS</h1>
+            <img
+              src="images/splitgpt-demo.gif"
+              alt="SplitGPT Demo"
+              width="438"
+              height="280"
+              border="0"
+              align="right"
+            />
+            <a href="https://splitgpt-alexwei.vercel.app/" target="_blank"
+              >SplitGPT</a
+            >: Resolve balances between friends using natural language
+            processing and a debt simplification algorithm (2024).
+            <ul>
+              <li>Frontend: TypeScript, SvelteKit, Tailwind, Vercel.</li>
+              <li>Backend: Python, FastAPI, Heroku.</li>
+              <li>
+                Uses ChatGPT3.5 and LangChain to extract structured data from
+                text and decompose the problem into smaller tasks.
+              </li>
+              <!-- <li>
+                I had taken the "LangChain for LLM Application Development",
+                "LangChain Chat with your Data", and "Functions, Tools and
+                Agents with LangChain" courses offered by DeepLearning.AI and
+                wanted to build an app of my own.
+              </li> -->
+              <li>
+                What I learned: Prompting was very important for working with
+                the pre-trained ChatGPT3.5 model. I was surprised by how fragile
+                the model was to slight changes in prompts (even with temp=0). I
+                did a lot of prompt engineering and tinkering with agents vs.
+                sequential chains, more freedom vs. constrained outputs. For
+                example, I tried giving an agent a task and math tools to do
+                calculations, and it would make unnecessary tool calls and
+                ultimately fail at the task. It's currently using a simple
+                sequential chain of prompts to fill in a table to the best of
+                the chain's ability (without math tools), and letting the human
+                edit the table on the frontend.
+              </li>
+            </ul>
+
+            <br />
+          </div>
+          <hr />
+          Last update: May 24, 2024
+          <hr />
+        </div>
+      </main>
+    </div>
+  </body>
+</html>
