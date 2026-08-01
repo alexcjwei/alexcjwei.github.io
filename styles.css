@@ -1,33 +1,16 @@
-/* Style credit: cs.jhu.edu/~cmhuang/ */
+/* Minimalist / retro — old-internet vibes */
+
+html {
+  background: #e9e6dc;
+}
+
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Open Sans', sans-serif;
-  line-height: 1.5em;
-  font-size: 100%;
-}
-
-main {
-  color: #1c2833;
-  float: left;
-  width: 100%;
-}
-
-#nav {
-  float: left;
-  width: 250px;
-  margin-left: -100%;
-  padding-bottom: 10010px;
-  margin-bottom: -10000px;
-  background: #eee;
-}
-
-#side-video {
-  float: right;
-  width: 300px;
-  margin-left: -100%;
-  padding-bottom: 10010px;
-  margin-bottom: -10000px;
+  font-family: "Courier New", Courier, "Lucida Console", Monaco, monospace;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #1a1a1a;
 }
 
 #wrapper {
@@ -35,108 +18,72 @@ main {
 }
 
 #content {
-  width: 1000px;
-  margin: auto;
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 24px;
+  background: #f5f2ea;
+  border-left: 1px solid #cfc9b8;
+  border-right: 1px solid #cfc9b8;
+  min-height: 100vh;
+  box-sizing: border-box;
 }
 
 .innertube {
-  margin-top: 50px;
-  margin-bottom: 50px;
+  margin-top: 24px;
+  margin-bottom: 24px;
 }
 
-p {
-  color: #778899;
-  margin-top: 0;
-  margin-bottom: 0;
-  padding-top: 0;
-  padding-bottom: 0;
+h1 {
+  font-size: 1.6em;
+  font-weight: bold;
+  letter-spacing: 0.15em;
+  margin: 0 0 0.4em 0;
+  border-bottom: 2px solid #1a1a1a;
+  padding-bottom: 0.2em;
 }
 
 h2 {
-  margin-bottom: 5px;
+  font-size: 1em;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  margin-top: 1.8em;
+  margin-bottom: 0.4em;
+  color: #444;
 }
 
-sidenote {
-  font-size: smaller;
-  color: #808b96;
+ul {
+  margin: 0.4em 0;
+  padding-left: 1.5em;
 }
 
-highlight {
-  font-weight: bold;
-  color: #778899;
-  border-bottom: 1px #ff6347 dotted;
-}
-
-date {
-  font-weight: normal;
-  margin-right: 1.2em;
-}
-
-pub {
-  font-weight: 900;
-  margin-right: 1.3em;
-}
-
-award {
-  color: #b18904;
-}
-
-note {
-  color: #848484;
-}
-
-focus {
-  color: #cd5c5c;
-  font-size: 105%;
-}
-
-next {
-  color: #cd5c5c;
-}
-
-theme {
-  font-weight: 300;
-  font-size: 150%;
-  margin-right: 1em;
-  margin-top: 20;
-  line-height: 2.5em;
-  font-family: 'Open Sans', 'PT Serif', 'Roboto Slab';
-}
-
+/* Classic Web 1.0 links: blue, purple when visited, always underlined */
 a:link {
-  text-decoration: none;
-  color: #005eb8;
-}
-a:hover {
-  border-bottom: 1px gray dotted;
+  color: #0000cc;
+  text-decoration: underline;
 }
 a:visited {
-  color: #005eb8;
+  color: #551a8b;
 }
-img.desaturate {
-  filter: grayscale(100%);
+a:hover {
+  background: #ffffcc;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid #cfc9b8;
+  margin: 1.5em 0;
 }
 
 @media screen and (max-width: 600px) {
   body {
-    font-size: 18px;
+    font-size: 16px;
     word-wrap: break-word;
     overflow-wrap: break-word;
   }
 
-  #wrapper {
-    width: 100%;
-    overflow: auto;
-  }
-
   #content {
-    width: 100%;
-    padding: 20px;
+    max-width: 100%;
+    border-left: none;
+    border-right: none;
   }
-
-  .innertube img {
-    width: 50%;
-    height: auto;
-  }
-
 }
